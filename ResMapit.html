@@ -1,0 +1,160 @@
+<!--HTML OSAN ALKU-->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Erikoiset kartat</title>
+    <link rel="stylesheet" href="./style.css" rel="stylesheet"></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<!--HTML OSA LOPPUU-->
+<body>
+
+<!--Valikon teko alkaa-->
+<nav class="norminav" id="munpudotus">
+    <ul>
+        <li><a href="./index.html">Koti</a></li>
+        <li><a href="./yhteystiedot.html">Yhteystiedot</a></li>
+        <li><a href="./palaute_lomake.php">Anna palautetta sivustosta</a></li>
+    </ul> 
+    <div class="menu">
+      <button onclick="showMenu()" class="menuBtn">Aseet</button>
+      <div id="menuId" class="menuContent">
+        <a href="./ct_aseet.html"class="active">CT-Aseet</a>
+        <a href="./t_aseet.html">T-Aseet</a>
+        <a href="./yhteiset_aseet.html">Yhteiset Aseet</a>
+      </div>
+    </div><br><br><br>
+    <div class="menu2">
+      <button onclick="showMenu2()" class="menuBtn2">Kartat</button>
+      <div id="menuId2" class="menuContent2">
+        <a href="mapitNET.html">Competitive</a>
+        <a href="HosMapit.html">Hostage</a>
+        <a href="ResMapit.html"class="active">Erikoiset</a>
+      </div>
+  </div><br><br><br>
+  <div class="menu3">
+    <button onclick="showMenu3()" class="menuBtn3">Muut ostettavat</button>
+    <div id="menuId3" class="menuContent3">
+      <a href="./kranaatit.html">Kranaatit</a>
+      <a href="./varusteet.html">Varusteet</a>
+      <a href="./puukot.html">Puukot</a>
+    </div>
+  </div>
+</nav>
+
+<!--VALIKON TEKO LOPPUU-->
+<style>
+div.gallery {
+  border: 2px solid white;
+}
+
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color:white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+</style>
+</head>
+<body>
+<section class="pöytä2">
+<h2 class="väri2">Erikoiset kartat</h2>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="./kuvat/resmapit/Abbey.jpg" alt="Abbey" width="600" height="400">
+    </a>
+    <div class="desc">Abbey
+    </div>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="./kuvat/resmapit/Biome.jpg" alt="Biome" width="600" height="400">
+    </a>
+    <div class="desc">Biome</div>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+      <div class="gallery">
+          <img src="./kuvat/resmapit/Canals.jpg" alt="Canals" width="600" height="400">
+        </a>
+        <div class="desc">Canals</div>
+      </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <img src="./kuvat/resmapit/Cobble.png" alt="Cobblestone" width="600" height="400">
+      </a>
+      <div class="desc">Cobblestone</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <img src="./kuvat/resmapit/Zoo.jpg" alt="Zoo" width="600" height="400">
+      </a>
+      <div class="desc">Zoo</div>
+    </div>
+</div>
+</section>
+<!--DROPDOWN SCRIPTI-->
+
+<script>
+  function showMenu() {
+    document.getElementById("menuId").classList.toggle("show");
+  }
+</script>
+
+<!--SCRIPTIN LOPPU-->
+<!--DROPDOWN SCRIPTI-->
+
+<script>
+  function showMenu2() {
+    document.getElementById("menuId2").classList.toggle("show2");
+  }
+</script>
+
+<!--SCRIPTIN LOPPU-->
+<!--DROPDOWN SCRIPTI-->
+
+<script>
+  function showMenu3() {
+    document.getElementById("menuId3").classList.toggle("show3");
+  }
+</script>
+
+<!--SCRIPTIN LOPPU-->

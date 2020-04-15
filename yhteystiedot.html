@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Yhteystiedot</title>
+    <link rel="stylesheet" href="style.css" rel="stylesheet"></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!--HTML OSA LOPPUU-->
+<body>
+
+<!--Valikon teko alkaa-->
+<nav class="norminav" id="munpudotus">
+  <ul>
+      <li><a href="./index.html">Koti</a></li>
+      <li><a href="./yhteystiedot.html"class="active">Yhteystiedot</a></li>
+      <li><a href="./palaute_lomake.php">Anna palautetta sivustosta</a></li>
+  </ul> 
+  <div class="menu">
+    <button onclick="showMenu()" class="menuBtn">Aseet</button>
+    <div id="menuId" class="menuContent">
+      <a href="./ct_aseet.html">CT-Aseet</a>
+      <a href="./t_aseet.html">T-Aseet</a>
+      <a href="./yhteiset_aseet.html">Yhteiset Aseet</a>
+    </div>
+  </div><br><br><br>
+  <div class="menu2">
+    <button onclick="showMenu2()" class="menuBtn2">Kartat</button>
+    <div id="menuId2" class="menuContent2">
+      <a href="mapitNET.html">Competitive</a>
+        <a href="HosMapit.html">Hostage</a>
+        <a href="ResMapit.html">Erikoiset</a>
+    </div>
+</div><br><br><br>
+<div class="menu3">
+  <button onclick="showMenu3()" class="menuBtn3">Muut ostettavat</button>
+  <div id="menuId3" class="menuContent3">
+    <a href="./kranaatit.html">Kranaatit</a>
+    <a href="./varusteet.html">Varusteet</a>
+    <a href="./puukot.html">Puukot</a>
+  </div>
+</div>
+</nav>
+<!--VALIKON TEKO LOPPUU-->
+<style>
+.kolumni {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.kortti {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+
+
+.sisällys {
+  padding: 0 16px;
+}
+
+.sisällys::after, .rivi::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.otsikko {
+  color: red;
+}
+
+.nappi {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.nappi:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .kolumni {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<section class="pöytä4">
+  <h2 class="aleksidima">Sivuston ylläpitäjät</h2>
+  <div class="rivi">
+    <div class="kolumni">
+      <div class="kortti">
+        <img src="./kuvat/minäjadima/aleksi.png" alt="Aleksi" style="width:100%">
+        <div class="sisällys">
+          <h2>Aleksi Glad</h2>
+          <p class="otsikko">Datanomi</p>
+          <p>CSGOWIKI sivun koodaaja</p>
+          <p>aleksi.glad@edu.tampere.fi</p>
+          <p><button class="nappi"><a href="./aleksi.html">Ota yhteyttä</button></p></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="kolumni">
+      <div class="kortti">
+        <img src="./kuvat/minäjadima/dima.jpg" alt="Dima" style="width:100%">
+        <div class="sisällys">
+          <h2>Dmitrij Ostonen</h2>
+          <p class="otsikko">Datanomi</p>
+          <p>CSGOWIKI sivun koodaaja</p>
+          <p>dmitrij.ostonen@edu.tampere.fi</p>
+          <p><button class="nappi"><a href="./dima.html">Ota yhteyttä</button></p></a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<!--DROPDOWN SCRIPTI-->
+
+<script>
+  function showMenu() {
+    document.getElementById("menuId").classList.toggle("show");
+  }
+</script>
+
+<!--SCRIPTIN LOPPU-->
+<!--DROPDOWN SCRIPTI-->
+
+<script>
+  function showMenu2() {
+    document.getElementById("menuId2").classList.toggle("show2");
+  }
+</script>
+
+<!--SCRIPTIN LOPPU-->
+<!--DROPDOWN SCRIPTI-->
+
+<script>
+  function showMenu3() {
+    document.getElementById("menuId3").classList.toggle("show3");
+  }
+</script>
+
+<!--SCRIPTIN LOPPU-->
+
+</body>
+</html>

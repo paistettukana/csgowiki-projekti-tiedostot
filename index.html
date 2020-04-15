@@ -1,0 +1,143 @@
+<!--HTML OSA ALKAA-->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Koti</title>
+    <link rel="stylesheet" href="./style.css"></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!--HTML OSA LOPPUU-->
+<body>
+
+<!--Valikon teko alkaa-->
+<nav class="norminav" id="munpudotus">
+  <ul>
+      <li><a href="./index.html"class="active">Koti</a></li>
+      <li><a href="./yhteystiedot.html">Yhteystiedot</a></li>
+      <li><a href="./palaute_lomake.php">Anna palautetta sivustosta</a></li>
+  </ul> 
+  <div class="menu">
+    <button onclick="showMenu()" class="menuBtn">Aseet</button>
+    <div id="menuId" class="menuContent">
+      <a href="./ct_aseet.html">CT-Aseet</a>
+      <a href="./t_aseet.html">T-Aseet</a>
+      <a href="./yhteiset_aseet.html">Yhteiset Aseet</a>
+    </div>
+  </div><br><br><br>
+  <div class="menu2">
+    <button onclick="showMenu2()" class="menuBtn2">Kartat</button>
+    <div id="menuId2" class="menuContent2">
+      <a href="mapitNET.html">Competitive</a>
+      <a href="HosMapit.html">Hostage</a>
+      <a href="ResMapit.html">Erikoiset</a>
+    </div>
+</div><br><br><br>
+<div class="menu3">
+  <button onclick="showMenu3()" class="menuBtn3">Muut ostettavat</button>
+  <div id="menuId3" class="menuContent3">
+    <a href="./kranaatit.html">Kranaatit</a>
+    <a href="./varusteet.html">Varusteet</a>
+    <a href="./puukot.html">Puukot</a>
+  </div>
+</div>
+</nav>
+<section class="pöytä3">
+  <h1>Tervetuloa CSGO WIKI verkkosivustolle</h1><br>
+  <h2>Tältä sivustolta löydät tarpeelliset tiedot CSGO pelin aseista, kartoista ja muista varusteista!</h2><br><br><br><br>
+  <p>
+    <img src="./kuvat/gifs/gif1.webp"class="gif">
+    <img src="./kuvat/gifs/gif2.webp"class="gif">
+    <img src="./kuvat/gifs/gif3.webp"class="gif">
+    <img src="./kuvat/gifs/gif4.webp"class="gif">
+  </p>
+
+</section>
+<!--VALIKON TEKO LOPPUU-->
+
+<!--DROPDOWN SCRIPTI-->
+
+<script>
+  function showMenu() {
+    document.getElementById("menuId").classList.toggle("show");
+  }
+</script>
+
+<!--SCRIPTIN LOPPU-->
+<!--DROPDOWN SCRIPTI-->
+
+<script>
+  function showMenu2() {
+    document.getElementById("menuId2").classList.toggle("show2");
+  }
+</script>
+
+<!--SCRIPTIN LOPPU-->
+<!--DROPDOWN SCRIPTI-->
+
+<script>
+  function showMenu3() {
+    document.getElementById("menuId3").classList.toggle("show3");
+  }
+</script>
+
+<!--SCRIPTIN LOPPU-->
+<!--SIVULINKIT SPONSOREILLE-->
+<style>
+.sivunavigaatio {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 300px;
+  left: 10px;
+  background: inherit;
+  overflow-x: hidden;
+  padding: 8px 0;
+  border-style: double;
+  border-color: white;
+  
+  
+}
+
+.sivunavigaatio a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  text-align:center;
+}
+
+.sivunavigaatio a:hover {
+  color: #064579;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sivunavigaatio {padding-top: 300px;}
+  .sivunavigaatio a {font-size: 18px;}
+}
+</style>
+
+
+<div class="sivunavigaatio">
+  <h1 class="sivunav">Muita csgowiki sivustoja</h1><hr>
+  <a href="https://liquipedia.net/counterstrike/Main_Page">liquipedia</a><hr>
+  <a href="https://counterstrike.fandom.com/wiki/Counter-Strike:_Global_Offensive">counterstrike.fandom</a><hr>
+  <a href="https://fi.wikipedia.org/wiki/Counter-Strike:_Global_Offensive">wikipedia</a><hr>
+  <a href="https://csgopedia.com/">csgopedia</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
